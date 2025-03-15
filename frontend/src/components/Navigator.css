@@ -1,0 +1,51 @@
+/* Fixed Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding: 20px;
+    color: black;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgb(198, 198, 198);
+}
+
+/* Logo and Title */
+.logodiv {
+    display: flex;
+    align-items: center;
+}
+
+.logodiv img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* Buttons */
+nav button {
+    margin: 0 10px;
+    padding: 8px 15px;
+    min-width: 100px;
+    background-color: rgba(245,130,33,255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: rgb(231, 107, 5)
+}
+
+.btn-div{
+    padding: 20px;;
+}
