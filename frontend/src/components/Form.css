@@ -1,0 +1,79 @@
+
+.h1{
+    text-align: center;
+    color: rgba(245,130,33,255);
+    
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+.form{
+    font-weight: bold;
+    
+    max-width: 400px;
+    border: none;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px hsl(0, 0%, 79%);
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin: 8px;
+    padding: 3px;;
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 2px hsl(0, 4%, 95%);
+    height: 25px;
+    width: 250px;
+    transition: transform 0.2s ease-in-out;
+}
+select{
+    margin: 8px;
+    padding: 3px;;
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 2px hsl(0, 4%, 95%);
+    width: 258px;
+    height: 32px;
+    transition: transform 0.2s ease-in-out;
+}
+input:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+select:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+button[type="reset"]{
+    font-weight: bold;
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+    border: 2px solid hsla(0, 100%, 50%, 0.834);
+    border-radius: 4px;
+    background-color: hsla(0, 100%, 50%, 0.741);
+    box-shadow: 2px 2px 5px 1px rgb(191, 191, 191);
+    transition: transform 0.2s ease-in-out;
+
+}
+button[type="submit"]{
+    font-weight: bold;
+    float: right;
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+    border: 2px solid hsla(120, 90%, 36%, 0.827);
+    border-radius: 4px;
+    background-color: hsla(120, 90%, 36%, 0.645);
+    box-shadow: 2px 2px 5px 1px rgb(191, 191, 191);
+    transition: transform 0.2s ease-in-out;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+p{
+    text-align: center;
+}

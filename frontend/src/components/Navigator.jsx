@@ -9,7 +9,7 @@ function Navigator() {
     return (
         <nav>
             <div className="logodiv">
-                <img src={Logo} alt="Logo" />
+                <img src={Logo} alt="Logo" onClick={() => navigate("/")} />
                 <h2>SVECW Echoes</h2>
             </div>
 
