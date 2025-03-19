@@ -12,7 +12,7 @@ function Login() {
 
     const handleSubmitClick = (event) => {
         event.preventDefault();
-        navigate("/profile");
+        navigate("/");
     };
 
     return (
@@ -24,10 +24,7 @@ function Login() {
                         <td><label htmlFor="m">Mail</label></td>
                         <td><input type="email" id="m" placeholder="Enter your mail" required/><br/></td>
                     </tr>
-                    <tr>
-                        <td><label htmlFor="n">Name</label></td>
-                        <td><input type="text" id="n" placeholder="Enter your name" required/><br/></td>
-                    </tr>
+
                     <tr>
                         <td><label htmlFor="p">Password</label></td>
                         <td><input type="password" id="p" placeholder="Enter your password" required/><br/></td>

@@ -21,7 +21,7 @@ function SignUp() {
             <form className="form" onSubmit={handleSubmitClick}>
                 <table>
                     <tr>
-                        <td><label htmlFor="n">Name</label></td>
+                        <td><label htmlFor="n">Student_ID</label></td>
                         <td><input type="text" id="n" placeholder="Enter your name" required/><br/></td>
                     </tr>
                     <tr>
