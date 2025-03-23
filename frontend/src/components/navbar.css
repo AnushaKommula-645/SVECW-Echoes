@@ -14,9 +14,10 @@
 }
 
 .logo {
-    width: 50px;
+    width: 50px;  /* Ensure width and height are equal */
     height: 50px;
-    margin-right: 10px;
+    border-radius: 50%;  /* Makes the image round */
+    object-fit: cover;  /* Ensures the image is properly cropped */
 }
 
 .title {
@@ -37,7 +38,7 @@
 }
 
 .nav-link {
-    /* background-color: #8dc63f; */
+    color: #f59038;
     text-decoration: none;
     font-size: 1rem;
     padding: 5px 10px;
@@ -54,6 +55,7 @@
 .nav-right {
     position: relative;
 }
+
 .menu-btn {
     background-color: #8dc63f;
     border: none;
@@ -64,6 +66,7 @@
 .menu-btn:hover{
     background-color: #8dc63f;
 }
+
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -87,15 +90,16 @@
 .menu-item:hover {
     background: lightgray;
 }
-.logout{
-    background-color: rgba(164,35,143,255);
-}
-.logout:hover{
-    background-color: #b841a4;
-}
+
 /*css for annoucements*/
 .anc{
     background-color:  orange;
     color: black;
     border: none;
+}
+.logout{
+    background-color: #a3238e;
+}
+.logout:hover{
+    background-color: #d02db5;
 }

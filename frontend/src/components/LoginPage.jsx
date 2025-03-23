@@ -4,7 +4,7 @@ import axios from "axios";
 import './Form.css';
 import Navigator from "./Navigator.jsx";
 
-function Login({ setIsLoggedIn }) {
+function Login({ setUser }) {  // <-- Accept setUser prop
     const [formData, setFormData] = useState({
         email: "",
         password: ""
@@ -20,20 +20,19 @@ function Login({ setIsLoggedIn }) {
         event.preventDefault();
         try {
             const response = await axios.post("http://localhost:5000/users/login", formData);
-            
+
             if (response.status === 200) {
                 alert("Login successful!");
                 console.log(response.data);
 
-                // localStorage.setItem("userId", response.data.user._id);  // Store user ID
-                // setIsLoggedIn(true);
-                navigate("/home");
+                setUser(response.data.user);  // <-- Store user in state instead of localStorage
+                navigate("/home");  // Redirect to Profile page
             } else {
                 alert("Invalid credentials");
             }
         } catch (error) {
+            console.error("Error during login:", error.response ? error.response.data : error);
             alert("Invalid credentials..");
-            console.log(error);
         }
     };
 
