@@ -57,14 +57,14 @@
 }
 
 .menu-btn {
-    background-color: #8dc63f;
+    background-color: white;
     border: none;
     color: black;
     font-size: 1.5rem;
     cursor: pointer;
 }
 .menu-btn:hover{
-    background-color: #8dc63f;
+    background-color: white;
 }
 
 .dropdown-menu {
@@ -92,14 +92,3 @@
 }
 
 /*css for annoucements*/
-.anc{
-    background-color:  orange;
-    color: black;
-    border: none;
-}
-.logout{
-    background-color: #a3238e;
-}
-.logout:hover{
-    background-color: #d02db5;
-}

@@ -64,9 +64,9 @@ button[type="submit"]{
     margin: 10px;
     width: 70px;
     height: 30px;
-    border: 2px solid hsla(120, 90%, 36%, 0.827);
+    border: 2px solid #7eb137;
     border-radius: 4px;
-    background-color: hsla(120, 90%, 36%, 0.645);
+    background-color: #8dc63f;
     box-shadow: 2px 2px 5px 1px rgb(191, 191, 191);
     transition: transform 0.2s ease-in-out;
 }

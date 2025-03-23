@@ -23,13 +23,21 @@ router.post("/register", async (req, res) => {
 // 🔹 Login User
 router.post("/login", async (req, res) => {
     const { email, password } = req.body;
+    console.log("Received login request:", email, password);  // Debugging
 
     try {
         const user = await User.findOne({ email });
-        if (!user) return res.status(404).json({ message: "User not found" });
+        if (!user) {
+            console.log("User not found");
+            return res.status(404).json({ message: "User not found" });
+        }
 
-        if (user.password !== password) return res.status(400).json({ message: "Invalid credentials" });
+        if (user.password !== password) {
+            console.log("Invalid password");
+            return res.status(400).json({ message: "Invalid credentials" });
+        }
 
+        console.log("Login successful for:", user);
         res.status(200).json({ 
             message: "Login successful", 
             user: {
@@ -40,9 +48,11 @@ router.post("/login", async (req, res) => {
             }
         });
     } catch (error) {
+        console.error("Error logging in:", error);
         res.status(500).json({ message: "Error logging in", error });
     }
 });
+
 
 // 🔹 Get User Profile
 router.get("/:id", async (req, res) => {

@@ -1,0 +1,41 @@
+.form{
+    font-weight: bold;
+    background-color: white;
+    max-width: 700px;
+    border: none;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px hsl(0, 0%, 79%);
+    display: flex;
+    justify-content: center;
+}
+input, textarea{
+    margin: 8px;
+    padding: 3px;;
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 2px hsl(0, 4%, 95%);
+    height: 25px;
+    width: 250px;
+    transition: transform 0.2s ease-in-out;
+}
+.button{
+    background-color: #a3238e;
+}
+.btn {
+    background-color: #bc1fa2;  /* ✅ Updated Like button color */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* ✅ Slightly lighter hover effect */
+.btn:hover {
+    background-color: #8c1c77;  /* ✅ Lighter shade on hover */
+}
