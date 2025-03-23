@@ -35,7 +35,8 @@ function HomePage() {
       </div>
       <div className="welcome-text">
         <h1>Welcome to Our SVECW Echoes</h1>
-        <p>"Welcome to SVECW Echoes – The Voice of Our Campus! of Shri Vishnu Engineering College for Women is a place where innovation meets opportunity, and svecwEchoes is your go-to platform for staying connected with everything happening around you. From exciting student-led events and insightful interview experiences to important campus announcements, we bring you the latest updates in one place. Whether you’re looking to participate in a club activity, stay informed about upcoming celebrations, or gain inspiration from your peers' experiences, svecwEchoes ensures that you never miss a beat. Join us in creating a vibrant and engaged campus community!"</p>
+        <p>"Welcome to SVECW Echoes – The Voice of Our Campus!🗣️ of Shri Vishnu Engineering College for Women is a place where innovation meets opportunity, and svecwEchoes is your go-to platform for staying connected with everything happening around you. From exciting student-led events and insightful interview experiences to important campus announcements, we bring you the latest updates in one place. Whether you’re looking to participate in a club activity, stay informed about upcoming celebrations, or gain inspiration from your peers' experiences, svecwEchoes ensures that you never miss a beat. Join us in creating a vibrant and engaged campus community!✨"</p>
+        
       </div>
     </div>
   );
