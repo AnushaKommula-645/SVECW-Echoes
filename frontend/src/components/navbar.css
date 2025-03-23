@@ -1,0 +1,101 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color : black;
+    padding: 10px 20px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-middle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.nav-link {
+    /* background-color: #8dc63f; */
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    color: black;
+    border: none;
+    transition: background 0.3s;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.nav-right {
+    position: relative;
+}
+.menu-btn {
+    background-color: #8dc63f;
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.menu-btn:hover{
+    background-color: #8dc63f;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.menu-item {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background 0.3s;
+}
+
+.menu-item:hover {
+    background: lightgray;
+}
+.logout{
+    background-color: rgba(164,35,143,255);
+}
+.logout:hover{
+    background-color: #b841a4;
+}
+/*css for annoucements*/
+.anc{
+    background-color:  orange;
+    color: black;
+    border: none;
+}

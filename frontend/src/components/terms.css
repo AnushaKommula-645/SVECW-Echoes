@@ -1,0 +1,23 @@
+
+.card {
+    min-width: 491px;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 5px 1px hsl(0, 0%, 81%);
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+p, ul{
+    text-align: left;
+}
+h1{
+    margin-top: auto;
+}
