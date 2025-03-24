@@ -99,7 +99,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/svecwechoes", {
 // Routes
 import userRoutes from "./routes/userRoutes.js";
 import postRoutes from "./routes/postRoutes.js"; // 🔹 Import Post Routes
-
+import adminRoutes from "./routes/adminRoutes.js";
+app.use("/admin", adminRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);  // 🔹 Add Post Routes
 

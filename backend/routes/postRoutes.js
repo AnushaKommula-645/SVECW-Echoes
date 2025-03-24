@@ -179,15 +179,13 @@ router.post("/:id/like", async (req, res) => {
     const { userId } = req.body;
     const post = await Post.findById(req.params.id);
 
-    if (!post) {
-      return res.status(404).json({ error: "Post not found" });
-    }
+    if (!post) return res.status(404).json({ error: "Post not found" });
 
     const index = post.likes.indexOf(userId);
     if (index === -1) {
-      post.likes.push(userId);
+      post.likes.push(userId); // Like the post
     } else {
-      post.likes.splice(index, 1);
+      post.likes.splice(index, 1); // Unlike the post
     }
 
     await post.save();
@@ -197,5 +195,4 @@ router.post("/:id/like", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
 export default router;
